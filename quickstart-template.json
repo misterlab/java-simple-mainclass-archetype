@@ -43,7 +43,7 @@
     },
     {
       "name": "MAVEN_ARGS",
-      "value": "package -DskipTests -e",
+      "value": "package -DskipTests -e -Dmaven.repo.local=http://localhost:8081/nexus/content/groups/public/",
       "description": "Arguments passed to mvn in the build"
     },
     {
@@ -157,6 +157,10 @@
               {
                 "name": "MAVEN_ARGS_APPEND",
                 "value": "${MAVEN_ARGS_APPEND}"
+              },
+              {
+                "name": "MAVEN_MIRROR_URL",
+                "value": "http://localhost:8081/nexus/content/groups/public/"
               }
             ]
           }
