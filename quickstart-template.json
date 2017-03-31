@@ -160,7 +160,7 @@
               },
               {
                 "name": "MAVEN_MIRROR_URL",
-                "value": "http://localhost:8081/nexus/content/groups/public/"
+                "value": "http://192.168.0.134:8081/nexus/content/groups/public/"
               }
             ]
           }
